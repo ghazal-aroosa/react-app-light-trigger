@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+import './Room.css';
 
 
 function Room() {
@@ -21,7 +22,7 @@ function Room() {
     //below  we use direct the functionality of increase Age fun. in button tag //
     
    return (
-    <div >
+    <div className={"room " +(isLit? "lit" : "dark")}>
      
       <strong>This Room is</strong> {isLit? "Lit": "dark"}
       <br/>
